@@ -46,6 +46,14 @@ parser.add('-q',
           dest='query',
           help='PromQL query')
 
+parser.add('-t',
+          '--time',
+          required=False,
+          env_var='TIME',
+          default=60,
+          dest='time',
+          help='Seconds to query')
+
 def main():
     try:
         args = parser.parse_args()
