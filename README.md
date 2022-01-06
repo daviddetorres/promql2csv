@@ -2,6 +2,11 @@
 A tool to extract data from a Prometheus server trough promQL query to CSV
 
 # Getting started
+## Clone the repository
+```bash
+git clone https://github.com/daviddetorres/promql2csv
+```
+
 ## Prerequisites
 Install dependencies:
 ```
