@@ -23,3 +23,5 @@ def test_parse_result_error():
 
 def test_parse_result_success():
     result = {"status":"success","data":{"resultType":"matrix","result":[{"metric":{"__name__":"up","instance":"localhost:9090","job":"prometheus"},"values":[[1641510018,"1"]]}]}}
+    assert extractor.parse_result(result) == [['Time','\'__name__\':\'up\'\,\'instance\':\'localhost:9090\'\,\'job\':\'prometheus\''],[1641510018, 1]]
+
