@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ## Using the tool
 Quick start: 
 ```
-./promql2csv.py -q "up{job='prometheus'}[1m]"
+./promql2csv.py -q "up{job='prometheus'}"
 ```
 
 Command line options:
