@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import configargparse
 import logging
+import time
 
 from extractor import extractor
 
@@ -50,9 +51,17 @@ parser.add('-t',
           '--time',
           required=False,
           env_var='TIME',
-          default=60,
+          default=300,
           dest='time',
           help='Seconds to query')
+
+parser.add('-s',
+          '--step',
+          required=False,
+          env_var='STEP',
+          default=60,
+          dest='step',
+          help='Interval between samples (in seconds)')
 
 def main():
     try:

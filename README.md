@@ -32,14 +32,16 @@ optional arguments:
   -q QUERY, --query QUERY
                         PromQL query [env var: QUERY]
   -t TIME, --time TIME  Seconds to query [env var: TIME]
+  -s STEP, --step STEP  Interval between samples (in seconds) [env var: STEP]
 
   Defaults:
     --output:          output.csv
     --url:             localhost
     --port:            9090
     --time:            60
+    --step:            60
 
- If an arg is specified in more than one place, then commandline values override environment
+ If an arg is specified in more than one place, then command line values override environment
 variables which override defaults.
 ```
 
